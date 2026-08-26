@@ -367,7 +367,7 @@ a {
 ------------------------------ */
 
 .media-video {
-  width: 100%;
+  max-height: 70%;
 
   display: flex;
 
@@ -378,7 +378,7 @@ a {
   display: block;
 
   width: auto;
-  height: 90vh;
+  max-height: vh;
 
   max-width: 100%;
 
@@ -393,23 +393,14 @@ a {
 
 .media-video-landscape {
   width: 100%;
-
-  display: flex;
-
-  justify-content: center;
+  overflow: hidden;
 }
 
 .media-video-landscape video {
   display: block;
-
-  width: 50%;
+  width: 100%;
   height: auto;
-
-  max-width: 100%;
-
-  aspect-ratio: 16 / 9;
-
-  object-fit: cover;
+  max-width: none;
 }
 
 /* ------------------------------
@@ -497,7 +488,7 @@ a {
 ------------------------------ */
 
 .gallery-grid {
-  width: 100%;
+  width: 90%;
 
   display: grid;
 
@@ -511,8 +502,9 @@ a {
 ------------------------------ */
 
 .gallery-item {
-  margin: 0;
-
+  margin: 10px;
+  max-width: 80%;
+  height: 50vh;
   overflow: hidden;
 }
 
@@ -545,4 +537,18 @@ a {
 
     gap: 4px;
   }
+}
+
+/* ------------------------------
+   SMALL GALLERY IMAGE
+------------------------------ */
+
+.gallery-item-small {
+  width: 50%;
+  height: 40vh;
+}
+
+.gallery-item-small img {
+  width: 100%;
+  height: auto;
 }
