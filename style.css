@@ -196,15 +196,11 @@ a {
    FLOATING IMAGE
 ------------------------------ */
 
-/* ------------------------------
-   FLOATING IMAGE
------------------------------- */
-
 .hover-image {
   position: fixed;
 
-  width: 300px;
-  height: 380px;
+  max-width: 400px;
+  height: auto;
 
   top: 0;
   left: 0;
@@ -362,12 +358,35 @@ a {
   height: auto;
 }
 
+/* ------- */
+
+/* ------------------------------
+   SMALL DOUBLE MEDIA
+------------------------------ */
+
+.media-double-small {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+}
+
+.media-double-small figure {
+  margin: 0;
+}
+
+.media-double-small img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* ------------------------------
    REEL VIDEO
 ------------------------------ */
 
 .media-video {
-  max-height: 70%;
+  max-height: 80vh;
 
   display: flex;
 
@@ -545,7 +564,7 @@ a {
 
 .gallery-item-small {
   width: 50%;
-  height: 40vh;
+  height: 50vh;
 }
 
 .gallery-item-small img {
