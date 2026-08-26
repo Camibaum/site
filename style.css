@@ -508,7 +508,7 @@ a {
 ------------------------------ */
 
 .gallery-grid {
-  width: 90%;
+  width: 100%;
 
   display: grid;
 
@@ -569,6 +569,20 @@ a {
 }
 
 .gallery-item-small img {
+  width: 100%;
+  height: auto;
+}
+
+/* ------------------------------
+BIG GALLERY IMAGE
+------------------------------ */
+
+.gallery-item-big {
+  width: 40vh;
+  height: auto;
+}
+
+.gallery-item-big img {
   width: 100%;
   height: auto;
 }
